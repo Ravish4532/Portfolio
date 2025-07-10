@@ -20,4 +20,4 @@ jobs:
 
       - name: Upload to S3
         run: |
-          aws s3 sync . "s3://portfolio1-project" --delete --exclude ".git*/*"
+          aws s3 sync . "s3://portfolio1-project" --delete
