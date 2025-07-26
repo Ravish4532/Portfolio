@@ -1,5 +1,5 @@
-function register(detail) {
-    detail.preventDefault(); // Prevent the default form submission behavior
+function register(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
 
     const name = document.getElementById("nid").value;
     const contacts = document.getElementById("contacts").value;
@@ -11,7 +11,7 @@ function register(detail) {
     console.log("Email:", email);
     console.log("Message:", message);
 
-    fetch("https://a5pd6qeg8j.execute-api.ap-south-1.amazonaws.com/dev/send", {
+    fetch("https://47p82bwl19.execute-api.ap-south-1.amazonaws.com/dev/send", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
