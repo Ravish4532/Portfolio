@@ -17,4 +17,4 @@ jobs:
           aws-region: ap-south-1
       - name: Upload to S3
         run: |
-          aws s3 sync . "s3://portfolio1-bucket1" --delete --exclude ".git*/*" --acl public-read
+          aws s3 sync . "s3://portfolio1-project1" --delete --exclude ".git*/*" --acl public-read
